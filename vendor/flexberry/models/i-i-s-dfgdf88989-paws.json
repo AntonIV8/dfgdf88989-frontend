@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISdfgdf88989Paws",
+  "modelName": "i-i-s-dfgdf88989-paws",
+  "className": "Paws",
+  "nameSpace": "IIS.dfgdf88989",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "direction",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "cat",
+      "relatedTo": "i-i-s-dfgdf88989-cat",
+      "inverse": "paws"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "PawsE",
+      "modelName": "i-i-s-dfgdf88989-paws",
+      "attrs": [
+        {
+          "name": "direction",
+          "caption": "Direction",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
